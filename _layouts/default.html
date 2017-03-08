@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Revovision - Design the future</title>
-    <meta name="description" content="Multipurpose HTML Theme">
+    <title>{{ site.title }} - {{ site.meta-title }}</title>
+    <meta name="description" content="{{ site.meta-description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="images/logo/favicon.png">
+    <link rel="shortcut icon" href="{{ site.favicon-image }}">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/themify-icons.css" />
-    <link rel="stylesheet" href="css/YTPlayer.css" />
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="js/revolutionslider/css/settings.css" />
-    <link rel="stylesheet" href="js/revolutionslider/css/navigation.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/animate.min.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/themify-icons.css" />
+    <link rel="stylesheet" href="/css/YTPlayer.css" />
+    <link rel="stylesheet" href="/css/owl.carousel.css" />
+    <link rel="stylesheet" href="/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/js/revolutionslider//css/settings.css" />
+    <link rel="stylesheet" href="/js/revolutionslider//css/navigation.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
 
    <!-- Particle css -->
     <style>
@@ -86,7 +86,7 @@
 
                   <div class="brand-logo">
                       <a class="navbar-brand" href="#">
-                          <img src="images/logo/logo.png" alt="Revovision">
+                          <img src="{{ site.logo }}" alt="{{ site.title }}">
                       </a>
                   </div>
                   <!-- brand-logo -->
@@ -125,13 +125,9 @@
 
                   <div class="custom-collapse navbar-collapse collapse inner-nav">
                       <ul class="nav navbar-nav">
-                          <li><a class="scroll-to" href="#home">Home</a></li>
-                          <li><a class="scroll-to" href="#about">About</a></li>
-                          <li><a class="scroll-to" href="#services">Services</a></li>
-                          <li><a class="scroll-to" href="#portfolio">Portfolio</a></li>
-                          <li><a class="scroll-to" href="#work-flow">Features</a></li>
-                          <li><a class="scroll-to" href="#testimonial">testimonial</a></li>
-                          <li><a class="scroll-to" href="#contact">contact</a></li>
+                          {% for menu in site.menus %}
+                              <li><a class="scroll-to" href="{{ menu.lien }}">{{ menu.title }}</a></li>
+                          {% endfor %}
                       </ul>
                       <!-- /nav -->
                   </div>
@@ -145,12 +141,11 @@
 
     <!-- Full Screen Image Parallax -->
     <header>
-        <div id="home" class="fs-img-parallax parallax parallax-overlay-dark" style="background-image:url(images/background/arriere.jpg)">
+        <div id="home" class="fs-img-parallax parallax parallax-overlay-dark" style="background-image:url({{ site.background-image }})">
             <div class="hero-caption caption-center caption-height-center container">
-              <h2 class="hero-heading text-xform-none">REVOVISION</h2>
-                <p class="hero-text-alt text-white">You come with the idea, we make it true.
-                    </p>
-                <a class="scroll-to btn btn-md btn-style-3 mrg-top-15" href="#about">Discover</a>
+              <h2 class="hero-heading text-xform-none">{{ site.slogan | upcase }}</h2>
+                <p class="hero-text-alt text-white">{{ site.sous-slogan }}</p>
+                <a class="scroll-to btn btn-md btn-style-3 mrg-top-15" href="{{ site.lien.boutton }}">{{ site.texte-boutton }}</a>
             </div>
             <!-- /hero-caption -->
             <div id="particles-js"></div>
@@ -164,9 +159,9 @@
     
         <div class="container">
             <div class="col-sm-6">
-                <h2 class="heading-left">About Us</h2>
-                <p class="sub-heading-left mrg-top-50 ">We’re Revovision</p>
-                <p class="mrg-top-15 text-justify">We are innovating your ideas into reality.</p>
+                <h2 class="heading-left">A Propos</h2>
+                <p class="sub-heading-left mrg-top-50 ">{{ site.slogan }}</p>
+                <p class="mrg-top-15 text-justify">{{ site.description | escape }}</p>
             </div>
             <!-- /column -->
             <div class="col-sm-6 mrg-top-70 pdd-horizon-50">
@@ -206,122 +201,28 @@
     <!-- services -->
        <section id="services" class="section bg-gray">
            <div class="container">
-               <h2 class="heading">Our services</h2>
-                          <p class="sub-heading">We Provide All Kind of Web Services</p>
+               <h2 class="heading">Nos services</h2>
+                <p class="sub-heading">{{ site.services.sous-titre }}</p>
+
                <div class="row">
                    <div class="owl-carousl owl-3-pag owl-pagi-1 pagi-center mrg-top-50">
-                       <div class="infography item">
-                           <div class="infography-style-4 bg-white">
-                               <div class="inner-wrapper">
-                                   <div class="infography-icon">
-                                       <i class="ti-file"></i>
-                                   </div>
-                                   <!-- /infography-icon -->
-                                   <h4 class="mrg-top-30">Web Development and Design</h4>
-                                   <p class="mrg-top-15">At Revovision we not only conceptualize, but also design web sites for budding companies and E-commerce businesses alike. Our aim is to provide an in-house service where we create your website, optimize it’s design for maximum user traffic, and establish your web presence. This practical strategy will definitely give you the peace of mind and allow you to focus on your business’s main goals.</p>
-                               </div>
-                               <!-- /inner-wrapper -->
-                           </div>
-                           <!-- /infography-style-4 -->
-                       </div>
-                       <!-- /infography -->
-
-                       <div class="infography item">
-                           <div class="infography-style-4 bg-white">
-                               <div class="inner-wrapper">
-                                   <div class="infography-icon">
-                                       <i class="ti-android"></i>
-                                   </div>
-                                   <!-- /infography-icon -->
-                                   <h4 class="mrg-top-30">Branding/Marketing</h4>
-                                   <p class="mrg-top-15">Our personalized solutions ensure that your company’s online design embodies what it does and what it stands for without having to convey too much information. The various colours, text styles, and designs we use are customized for you. This will allow your company to have a founded web presence as well as create a recognizable brand from first-use.</p>
-                               </div>
-                               <!-- /inner-wrapper -->
-                           </div>
-                           <!-- /infography-style-4 -->
-                       </div>
-                       <!-- /infography -->
-
-                       <div class="infography item">
-                           <div class="infography-style-4 bg-white">
-                               <div class="inner-wrapper">
-                                   <div class="infography-icon">
-                                       <i class="ti-bar-chart-alt"></i>
-                                   </div>
-                                   <!-- /infography-icon -->
-                                   <h4 class="mrg-top-30">SEO</h4>
-                                   <p class="mrg-top-15">Search Engine Optimization  much know by his acronym SEO is a strategy that we implement in your website’s design. Revovision structures websites for optimal web visibility on all major search engine as Google. This feature will ensure that your business’s website will advertise itself as much as possible with minimal effort, thus reducing costs through efficiency.</p>
-                               </div>
-                               <!-- /inner-wrapper -->
-                           </div>
-                           <!-- /infography-style-4 -->
-                       </div>
-                       <!-- /infography -->
-
-                       <!---->
-                       <div class="infography item">
-                           <div class="infography-style-4 bg-white">
-                               <div class="inner-wrapper">
-                                   <div class="infography-icon">
-                                       <i class="ti-ruler-alt-2"></i>
-                                   </div>
-                                   <!-- /infography-icon -->
-                                   <h4 class="mrg-top-30">Multimedia</h4>
-                                   <p class="mrg-top-15">Revovision has also conceptualized and designed two platforms that showcase Senegalese talent for both music and visual mediain order to give greater visibility to the artists. Thereare no other websites that have re-assembled and organized in an orderly fashion Senegalese television shows and music to optimizing user experience.</p>
-                               </div>
-                               <!-- /inner-wrapper -->
-                           </div>
-                           <!-- /infography-style-4 -->
-                       </div>
-                       <!-- /infography --
-
-                       <div class="infography item">
-                           <div class="infography-style-4 bg-white">
-                               <div class="inner-wrapper">
-                                   <div class="infography-icon">
-                                       <i class="ti-thought"></i>
-                                   </div>
-                                   <!-- /infography-icon --
-                                   <h4 class="mrg-top-30">Animation</h4>
-                                   <p class="mrg-top-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper, get tincidunt nibh pulvinar onec rutrum congue blandit aliquet</p>
-                               </div>
-                               <!-- /inner-wrapper --
-                           </div>
-                           <!-- /infography-style-4 --
-                       </div>
-                       <!-- /infography --
-
-                       <div class="infography item">
-                           <div class="infography-style-4 bg-white">
-                               <div class="inner-wrapper">
-                                   <div class="infography-icon">
-                                       <i class="ti-server"></i>
-                                   </div>
-                                   <!-- /infography-icon --
-                                   <h4 class="mrg-top-30">SEO</h4>
-                                   <p class="mrg-top-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper, get tincidunt nibh pulvinar onec rutrum congue blandit aliquet</p>
-                               </div>
-                               <!-- /inner-wrapper --
-                           </div>
-                           <!-- /infography-style-4 --
-                       </div>
-                       <!-- /infography --
-
-                       <div class="infography item">
-                           <div class="infography-style-4 bg-white">
-                               <div class="inner-wrapper">
-                                   <div class="infography-icon">
-                                       <i class="ti-pencil"></i>
-                                   </div>
-                                   <!-- /infography-icon -
-                                   <h4 class="mrg-top-30">Graphic Design</h4>
-                                   <p class="mrg-top-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper, get tincidunt nibh pulvinar onec rutrum congue blandit aliquet</p>
-                               </div>
-                               <!-- /inner-wrapper 
-                           </div>
-                           <!-- /infography-style-4 
-                       </div>
-                       <!-- /infography -->
+                        {% for service in site.services %}
+                            <div class="infography item">
+                                <div class="infography-style-4 bg-white">
+                                    <div class="inner-wrapper">
+                                        <div class="infography-icon">
+                                            <i class="{{ service.icon-class }}"></i>
+                                        </div>
+                                        <!-- /infography-icon -->
+                                        <h4 class="mrg-top-30">{{ service.title }}</h4>
+                                        <p class="mrg-top-15">{{ service.description }}</p>
+                                    </div>
+                                    <!-- /inner-wrapper -->
+                                </div>
+                                <!-- /infography-style-4 -->
+                            </div>
+                            <!-- /infography -->
+                        {% endfor %}
 
                    </div>
                    <!-- owl-3-item -->
@@ -336,12 +237,12 @@
     
     
    
-    <!-- Features -->
+    <!-- Features - ->
     <section id="features" class="section">
         <div class="container">
-            <h2 class="heading">We Are Revovision</h2>
-            <p class="sub-heading">Coding and design is our passion. </p>
-           <!-- <p class="text-center mrg-top-50 width-80 mrg-horizon-auto">Adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Curabitur vel massa lectus. Vivamus consequat dolor non tellus imperdiet pharetra suscipit ante at ullamcorper pulvinar neque porttitor.</p>-->
+            <h2 class="heading">Methodes</h2>
+            <p class="sub-heading">{{ site.methodes.sous-titre }}</p>
+           <!-- <p class="text-center mrg-top-50 width-80 mrg-horizon-auto">Adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Curabitur vel massa lectus. Vivamus consequat dolor non tellus imperdiet pharetra suscipit ante at ullamcorper pulvinar neque porttitor.</p>- ->
 
             <div class="features-1 mrg-top-70">
                 <ul class="nav nav-tabs">
@@ -350,64 +251,64 @@
                             <i class="ti-desktop"></i>
                             <h4 class="mrg-top-35">Responsive</h4>
                         </a>
-                        <!-- /tab -->
+                        <!-- /tab - ->
                     </li>
-                    <!-- /column -->
+                    <!-- /column - ->
 
                     <li class="col-md-3 col-sm-6 col-xs-12 features-menu ">
                         <a data-toggle="tab" href="#2">
                             <i class="ti-anchor"></i>
                             <h4 class="mrg-top-35">Ultra flexible</h4>
                         </a>
-                        <!-- /tab -->
+                        <!-- /tab - ->
                     </li>
-                    <!-- /column -->
+                    <!-- /column - ->
 
                     <li class="col-md-3 col-sm-6 col-xs-12 features-menu">
                         <a data-toggle="tab" href="#3">
                             <i class="ti-ruler-alt-2"></i>
                             <h4 class="mrg-top-35">Clean & Neat</h4>
                         </a>
-                        <!-- /tab -->
+                        <!-- /tab - ->
                     </li>
-                    <!-- /column -->
+                    <!-- /column - ->
 
                     <li class="col-md-3 col-sm-6 col-xs-12 features-menu">
                         <a data-toggle="tab" href="#4">
                             <i class=" ti-light-bulb"></i>
                             <h4 class="mrg-top-35">Easy to Customize</h4>
                         </a>
-                        <!-- /tab -->
+                        <!-- /tab - ->
                     </li>
-                    <!-- /column -->
+                    <!-- /column - ->
                 </ul>
                 <div class="tab-content">
                     <div id="1" class="tab-pane fade in active">
-                        <img class="img-responsive pdd-top-50" src="images/background/mockup-5.png" alt="">
+                        <img class="img-responsive pdd-top-50" src="/images/background/mockup-5.png" alt="">
                     </div>
-                    <!-- /tab-pane -->
+                    <!-- /tab-pane - ->
 
                     <div id="2" class="tab-pane fade">
-                        <img class="img-responsive mrg-horizon-auto pdd-top-50" src="images/background/mockup-6.png" alt="">
+                        <img class="img-responsive mrg-horizon-auto pdd-top-50" src="/images/background/mockup-6.png" alt="">
                     </div>
-                    <!-- /tab-pane -->
+                    <!-- /tab-pane - ->
 
                     <div id="3" class="tab-pane fade">
-                        <img class="img-responsive mrg-horizon-auto pdd-top-50" src="images/background/mockup-7.png" alt="">
+                        <img class="img-responsive mrg-horizon-auto pdd-top-50" src="/images/background/mockup-7.png" alt="">
                     </div>
-                    <!-- /tab-pane -->
+                    <!-- /tab-pane - ->
 
                     <div id="4" class="tab-pane fade">
-                        <img class="img-responsive mrg-horizon-auto pdd-top-50" src="images/background/mockup-8.png" alt="">
+                        <img class="img-responsive mrg-horizon-auto pdd-top-50" src="/images/background/mockup-8.png" alt="">
                     </div>
-                    <!-- /tab-pane -->
+                    <!-- /tab-pane - ->
                 </div>
-                <!-- Tab -->
+                <!-- Tab - ->
             </div>
-            <!-- feature -->
+            <!-- feature - ->
 
         </div>
-        <!-- /container -->
+        <!-- /container - ->
     </section>
     <!-- /#Features -->
 
@@ -419,64 +320,29 @@
     <!-- Work Flow -->
     <section id="work-flow" class="section bg-gray">
         <div class="container">
-            <h2 class="heading">How We Works</h2>
-            <p class="mrg-top-70 text-center">From designing websites for established companies and e-commerce businesses alike, to developing, and implementing information systems<br/> Revovision meets every available need geared towards the establishment of a web presence.</p>
+            <h2 class="heading">Nos Methodes</h2>
+            <p class="mrg-top-70 text-center">{{ site.services.sous-titre }}</p>
 
             <div class="work-flow-1 mrg-top-70">
 
-                <div class="right ">
-                    <div class="col-sm-6">
-                        <img class="img-responsive" src="images/background/wf-bg-1.jpg" alt="">
-                    </div>
-                    <!-- /column -->
-
-                    <div class="col-sm-6">
-                        <div class="work-flow-content">
-                            <h1 class="process">01</h1>
-                            <h4>Design</h4>
-                            <p class="mrg-top-30">First of all, we coordonate with the client in order to find the adequate design for the website and we optimise it for a maximum user traffic .</p>
+                {% for methode in site.methodes %}
+                    <div class="{% cycle 'right', 'left' %} ">
+                        <div class="col-sm-6">
+                            <img class="img-responsive" src="{{ methode.image }}" alt="">
                         </div>
-                        <!-- / work-flow-content -->
-                    </div>
-                    <!-- /column -->
-                </div>
-                <!-- /right -->
+                        <!-- /column -->
 
-                <div class="left">
-                    <div class="col-sm-6">
-                        <div class="work-flow-content">
-                            <h1 class="process">02</h1>
-                            <h4>Develope</h4>
-                            <p class="mrg-top-30">Our aim is to provide an in-house service where we create your website, optimize it’s design for maximum user traffic, and establish your web presence.</p>
+                        <div class="col-sm-6">
+                            <div class="work-flow-content">
+                                <h1 class="process">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</h1>
+                                <h4>{{ methode.title }}</h4>
+                                <p class="mrg-top-30">{{ methode.description }}</p>
+                            </div>
+                            <!-- / work-flow-content -->
                         </div>
-                        <!-- / work-flow-content -->
+                        <!-- /column -->
                     </div>
-                    <!-- /column -->
-
-                    <div class="col-sm-6">
-                        <img class="img-responsive" src="images/background/wf-bg-2.jpg" alt="">
-                    </div>
-                    <!-- /column -->
-                </div>
-                <!-- /left -->
-
-                <div class="right ">
-                    <div class="col-sm-6">
-                        <img class="img-responsive" src="images/background/wf-bg-3.jpg" alt="">
-                    </div>
-                    <!-- /column -->
-
-                    <div class="col-sm-6">
-                        <div class="work-flow-content">
-                            <h1 class="process">03</h1>
-                            <h4>Launch</h4>
-                            <p class="mrg-top-30">After every task completed and all requierements meeted, we launch the website </p>
-                        </div>
-                        <!-- / work-flow-content -->
-                    </div>
-                    <!-- /column -->
-                </div>
-                <!-- /right -->
+                {% endfor %}
 
             </div>
             <!-- /work-flow-1 -->
@@ -489,228 +355,50 @@
      <!-- Portfolio -->
     <section id="portfolio" class="section">
         <div class="container">
-            <h2 class="heading">Works</h2>
+            <h2 class="heading">Realisations</h2>
             <!-- <p class="sub-heading">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>-->
 
-            <div class="portfolio-filter-group text-center folio-fillter-2 mrg-top-50 mrg-btm-30">
+            <!--<div class="portfolio-filter-group text-center folio-fillter-2 mrg-top-50 mrg-btm-30">
                 <a href="#" data-filter="*" class="iso-active iso-button ">All</a>
                 <a href="#" data-filter=".graphic" class="iso-button">Corporate</a>
                 <a href="#" data-filter=".web" class="iso-button">Web Platforms</a>
                 <a href="#" data-filter=".branding" class="iso-button">E-Commerce</a>
                 <a href="#" data-filter=".video" class="iso-button">Design</a>
-            </div>
+            </div>-->
             <!-- portfolio-filter -->
 
             <div class="portfolio portfolio-isotope masonry col-3 gutter mrg-top-50">
-                <div class="folio-item video web branding">
-                    <div class="folio-style-1">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/1.jpg" alt="">
-                        </div>
-                        <!-- folio-image -->
-                        <div class="overlay">
-                            <div class="overlay-caption">
-                                <div class="overlay-content">
-                                    <div class="folio-info">
-                                        <h3 class="text-white">Project Name</h3>
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                    <!-- /folio-info -->
-                                    <div class="folio-links">
-                                        <a href="#"><i class="ti-search"></i></a>
-                                        <a href="#"><i class="ti-link"></i></a>
-                                    </div>
-                                    <!-- folio-links -->
-                                </div>
-                                <!-- /overlay-content -->
+                
+                {% for realisation in site.realisations %}
+                    <div class="folio-item video web branding">
+                        <div class="folio-style-1">
+                            <div class="folio-image">
+                                <img class="img-responsive" src="{{ realisation.image }}" alt="{{ realisation.title }}">
                             </div>
-                            <!-- /overlay-caption -->
-                        </div>
-                        <!-- /overlay -->
-                    </div>
-                    <!-- /folio-style -->
-                </div>
-                <!-- /folio-item -->
-
-                <div class="folio-item video graphic">
-                    <div class="folio-style-1">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/2.jpg" alt="">
-                        </div>
-                        <!-- folio-image -->
-                        <div class="overlay">
-                            <div class="overlay-caption">
-                                <div class="overlay-content">
-                                    <div class="folio-info">
-                                        <h3 class="text-white">Project Name</h3>
-                                        <p>Lorem ipsum dolor sit amet</p>
+                            <!-- folio-image -->
+                            <div class="overlay">
+                                <div class="overlay-caption">
+                                    <div class="overlay-content">
+                                        <div class="folio-info">
+                                            <h3 class="text-white">{{ realisation.title }}</h3>
+                                            <p>{{ realisation.description }}</p>
+                                        </div>
+                                        <!-- /folio-info -->
+                                        <div class="folio-links">
+                                            <a href="{{ realisation.lien }}" target="_blank"><i class="ti-link"></i></a>
+                                        </div>
+                                        <!-- folio-links -->
                                     </div>
-                                    <!-- /folio-info -->
-                                    <div class="folio-links">
-                                        <a href="#"><i class="ti-search"></i></a>
-                                        <a href="#"><i class="ti-link"></i></a>
-                                    </div>
-                                    <!-- folio-links -->
+                                    <!-- /overlay-content -->
                                 </div>
-                                <!-- /overlay-content -->
+                                <!-- /overlay-caption -->
                             </div>
-                            <!-- /overlay-caption -->
+                            <!-- /overlay -->
                         </div>
-                        <!-- /overlay -->
+                        <!-- /folio-style -->
                     </div>
-                    <!-- /folio-style -->
-                </div>
-                <!-- /folio-item -->
-
-                <div class="folio-item web graphic">
-                    <div class="folio-style-1">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/tall-1.jpg" alt="">
-                        </div>
-                        <!-- folio-image -->
-                        <div class="overlay">
-                            <div class="overlay-caption">
-                                <div class="overlay-content">
-                                    <div class="folio-info">
-                                        <h3 class="text-white">Project Name</h3>
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                    <!-- /folio-info -->
-                                    <div class="folio-links">
-                                        <a href="#"><i class="ti-search"></i></a>
-                                        <a href="#"><i class="ti-link"></i></a>
-                                    </div>
-                                    <!-- folio-links -->
-                                </div>
-                                <!-- /overlay-content -->
-                            </div>
-                            <!-- /overlay-caption -->
-                        </div>
-                        <!-- /overlay -->
-                    </div>
-                    <!-- /folio-style -->
-                </div>
-                <!-- /folio-item -->
-
-                <div class="folio-item video branding">
-                    <div class="folio-style-1">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/4-tall.jpg" alt="">
-                        </div>
-                        <!-- folio-image -->
-                        <div class="overlay">
-                            <div class="overlay-caption">
-                                <div class="overlay-content">
-                                    <div class="folio-info">
-                                        <h3 class="text-white">Project Name</h3>
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                    <!-- /folio-info -->
-                                    <div class="folio-links">
-                                        <a href="#"><i class="ti-search"></i></a>
-                                        <a href="#"><i class="ti-link"></i></a>
-                                    </div>
-                                    <!-- folio-links -->
-                                </div>
-                                <!-- /overlay-content -->
-                            </div>
-                            <!-- /overlay-caption -->
-                        </div>
-                        <!-- /overlay -->
-                    </div>
-                    <!-- /folio-style -->
-                </div>
-                <!-- /folio-item -->
-
-                <div class="folio-item branding graphic">
-                    <div class="folio-style-1">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/5.jpg" alt="">
-                        </div>
-                        <!-- folio-image -->
-                        <div class="overlay">
-                            <div class="overlay-caption">
-                                <div class="overlay-content">
-                                    <div class="folio-info">
-                                        <h3 class="text-white">Project Name</h3>
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                    <!-- /folio-info -->
-                                    <div class="folio-links">
-                                        <a href="#"><i class="ti-search"></i></a>
-                                        <a href="#"><i class="ti-link"></i></a>
-                                    </div>
-                                    <!-- folio-links -->
-                                </div>
-                                <!-- /overlay-content -->
-                            </div>
-                            <!-- /overlay-caption -->
-                        </div>
-                        <!-- /overlay -->
-                    </div>
-                    <!-- /folio-style -->
-                </div>
-                <!-- /folio-item -->
-
-                <div class="folio-item web branding">
-                    <div class="folio-style-1">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/6.jpg" alt="">
-                        </div>
-                        <!-- folio-image -->
-                        <div class="overlay">
-                            <div class="overlay-caption">
-                                <div class="overlay-content">
-                                    <div class="folio-info">
-                                        <h3 class="text-white">Project Name</h3>
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                    <!-- /folio-info -->
-                                    <div class="folio-links">
-                                        <a href="#"><i class="ti-search"></i></a>
-                                        <a href="#"><i class="ti-link"></i></a>
-                                    </div>
-                                    <!-- folio-links -->
-                                </div>
-                                <!-- /overlay-content -->
-                            </div>
-                            <!-- /overlay-caption -->
-                        </div>
-                        <!-- /overlay -->
-                    </div>
-                    <!-- /folio-style -->
-                </div>
-                <!-- /folio-item -->
-
-                <div class="folio-item web">
-                    <div class="folio-style-1">
-                        <div class="folio-image">
-                            <img class="img-responsive" src="images/portfolio/3.jpg" alt="">
-                        </div>
-                        <!-- folio-image -->
-                        <div class="overlay">
-                            <div class="overlay-caption">
-                                <div class="overlay-content">
-                                    <div class="folio-info">
-                                        <h3 class="text-white">Project Name</h3>
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                    <!-- /folio-info -->
-                                    <div class="folio-links">
-                                        <a href="#"><i class="ti-search"></i></a>
-                                        <a href="#"><i class="ti-link"></i></a>
-                                    </div>
-                                    <!-- folio-links -->
-                                </div>
-                                <!-- /overlay-content -->
-                            </div>
-                            <!-- /overlay-caption -->
-                        </div>
-                        <!-- /overlay -->
-                    </div>
-                    <!-- /folio-style -->
-                </div>
-                <!-- /folio-item -->
+                    <!-- /folio-item -->
+                {% endfor %}
 
             </div>
             <!-- /portfolio -->
@@ -720,7 +408,7 @@
     <!-- /#Portfolio -->
 
 
-    <!-- Testimonial -->
+    <!-- Testimonial - ->
     <section id="testimonial" class="section-3 bg-gray">
         <div class="container">
             
@@ -730,11 +418,11 @@
                 <div class="item text-center">
                     <div class="person">
                         <div class="person-image">
-                            <img class="img-responsive" src="images/thumb/testimonial-1.jpg" alt="">
+                            <img class="img-responsive" src="/images/thumb/testimonial-1.jpg" alt="">
                         </div>
-                        <!-- /person-image -->
+                        <!-- /person-image - ->
                     </div>
-                    <!--/person -->
+                    <!--/person - ->
 
                     <p>
                         <i class="ti-quote-left pdd-horizon-15"></i> Sed viverra diam ac metus tincidunt, sollicitudin dictum arcu feugiat. eget malesuada imperdiet. Nunc erat diam, aliquam vel varius in, sagittis a urna. Etiam in fermentum dui. Lorem ipsum dolor sit amet. Suspendisse velit libero.
@@ -742,16 +430,16 @@
                     </p>
                     <h5 class="person mrg-top-30">Jack Sparrow - Company.inc</h5>
                 </div>
-                <!-- /item -->
+                <!-- /item - ->
 
                 <div class="item text-center">
                     <div class="person">
                         <div class="person-image">
-                            <img class="img-responsive" src="images/thumb/testimonial-2.jpg" alt="">
+                            <img class="img-responsive" src="/images/thumb/testimonial-2.jpg" alt="">
                         </div>
                         <!-- /person-image -->
                     </div>
-                    <!--/person -->
+                    <!--/person - ->
 
                     <p>
                         <i class="ti-quote-left pdd-horizon-15"></i> Sed viverra diam ac metus tincidunt, sollicitudin dictum arcu feugiat. eget malesuada imperdiet. Nunc erat diam, aliquam vel varius in, sagittis a urna. Etiam in fermentum dui. Lorem ipsum dolor sit amet. Suspendisse velit libero.
@@ -759,16 +447,16 @@
                     </p>
                     <h5 class="person mrg-top-30">Jack Sparrow - Company.inc</h5>
                 </div>
-                <!-- /item -->
+                <!-- /item - ->
 
                 <div class="item text-center">
                     <div class="person">
                         <div class="person-image">
-                            <img class="img-responsive" src="images/thumb/testimonial-3.jpg" alt="">
+                            <img class="img-responsive" src="/images/thumb/testimonial-3.jpg" alt="">
                         </div>
                         <!-- /person-image -->
                     </div>
-                    <!--/person -->
+                    <!--/person - ->
 
                     <p>
                         <i class="ti-quote-left pdd-horizon-15"></i> Sed viverra diam ac metus tincidunt, sollicitudin dictum arcu feugiat. eget malesuada imperdiet. Nunc erat diam, aliquam vel varius in, sagittis a urna. Etiam in fermentum dui. Lorem ipsum dolor sit amet. Suspendisse velit libero.
@@ -776,13 +464,13 @@
                     </p>
                     <h5 class="person mrg-top-30">Jack Sparrow - Company.inc</h5>
                 </div>
-                <!-- /item -->
+                <!-- /item - ->
 
             </div>
-            <!-- /testimonial-1 -->
+            <!-- /testimonial-1 - ->
 
         </div>
-        <!-- /container -->
+        <!-- /container - ->
     </section>
     <!-- /testimonial -->
 
@@ -791,12 +479,12 @@
         <div class="container">
             <div class="owl-5 owl-carousel clients-1">
 
-                <div class="item"><img class="img-responsive" src="images/client/1.png" alt=""></div>
-                <div class="item"><img class="img-responsive" src="images/client/2.png" alt=""></div>
-                <div class="item"><img class="img-responsive" src="images/client/3.png" alt=""></div>
-                <div class="item"><img class="img-responsive" src="images/client/4.png" alt=""></div>
-                <div class="item"><img class="img-responsive" src="images/client/5.png" alt=""></div>
-                <div class="item"><img class="img-responsive" src="images/client/6.png" alt=""></div>
+                <div class="item"><img class="img-responsive" src="/images/client/1.png" alt=""></div>
+                <div class="item"><img class="img-responsive" src="/images/client/2.png" alt=""></div>
+                <div class="item"><img class="img-responsive" src="/images/client/3.png" alt=""></div>
+                <div class="item"><img class="img-responsive" src="/images/client/4.png" alt=""></div>
+                <div class="item"><img class="img-responsive" src="/images/client/5.png" alt=""></div>
+                <div class="item"><img class="img-responsive" src="/images/client/6.png" alt=""></div>
 
             </div>
             <!-- clients-1 -
@@ -807,16 +495,16 @@
 
 
    <!-- Call To Action -->
-       <section id="cta" class="section-3 parallax no-border" style="background-image:url(images/background/img-parallax-9.jpg)">
+       <section id="cta" class="section-3 parallax no-border" style="background-image:url(/images/background/img-parallax-9.jpg)">
            <div class="container">
                <div class="col-sm-9">
-                   <p class="droid-serif-italic ls-1-5 text-gray">Do You Like Our Work?</p>
-                   <h3 class="ls-5 text-white">Start your Project with Revovision</h3>
+                   <p class="droid-serif-italic ls-1-5 text-gray">{{ site.pre-footer-text-1 }}</p>
+                   <h3 class="ls-5 text-white">{{ site.pre-footer-text-2 }}</h3>
                </div>
                <!-- /column -->
 
                <div class="col-sm-3">
-                   <a href="#footer" class="btn btn-lg btn-style-3 mrg-top-25">Contact us</a>
+                   <a href="{{ site.pre-footer-boutton-lien }}" class="btn btn-lg btn-style-3 mrg-top-25">{{ site.pre-footer-boutton-text }}</a>
                </div>
                <!-- /column -->
 
@@ -832,15 +520,15 @@
              <div class="col-md-4 col-sm-12">
                    <div class="widget">
                        <div class="more-about-us-widget">
-                           <img class="img-responsive" src="images/logo/logo.png" alt="">
-                           <p class="mrg-vertical-15">You come with the idea, we take care of the rest. Make a try, contact us!!!</p>
+                           <img class="img-responsive" src="{{ site.logo }}" alt="{{ site.title }}">
+                           <p class="mrg-vertical-15">{{ site.footer-text }}</p>
 
                            <div class="contact-info-widget mrg-top-30">
                                <ul>
                                    <li><i class="ti-map"></i>Montreal, QC CANADA</li>
                                    <li><i class="ti-mobile"></i>+1 438 349 1758</li>
                                    <li><i class="ti-email"></i><a href="mailto:gabriel@revovision.
-                                   ca">support@revovision.ca</a></li>
+                                   ca">{{ site.email-contact }}</a></li>
                                    <li><i class="ti-world"></i><a href="#">www.revovision.ca</a></li>
                                </ul>
                            </div>
@@ -856,7 +544,7 @@
                <div class="col-md-8 col-sm-12">
                    <div class="widget">
                        <div class="widget-tittle">
-                           <h4>Contact Form</h4>
+                           <h4>Contact</h4>
                        </div>
                        <!-- widget-tittle -->
 
@@ -914,7 +602,7 @@
 
         <div class="footer-bottom">
             <div class="container">
-                <small class="copyright pull-left">© 2016 ALL RIGHT RESERVED. DESIGNED BY <a href="#">REVOVISION</a>.</small>
+                <small class="copyright pull-left">© 2016 ALL RIGHT RESERVED. DESIGNED BY <a href="#">{{ site.title | upcase }}</a>.</small>
                 <div class="social-icon pull-right">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -935,20 +623,20 @@
 
 
  <!-- Java Script -->
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.countTo.js"></script>
-    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
-    <script type="text/javascript" src="js/jquery.appear.js"></script>
-    <script type="text/javascript" src="js/smoothscroll.js"></script>
-    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/js/jquery.mb.YTPlayer.js"></script>
+    <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="/js/wow.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="/js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="/js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="/js/smoothscroll.js"></script>
+    <script type="text/javascript" src="/js/jquery.magnific-popup.min.js"></script>
     <!-- particleground -->
-    <script type="text/javascript" src="js/jquery.particleground.js"></script>
+    <script type="text/javascript" src="/js/jquery.particleground.js"></script>
     <script>
         particlesJS("particles-js", {
         "particles": {
@@ -1026,11 +714,11 @@
     );
     </script>
     <!-- /particleground -->
-    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/google-map.js"></script>
-    <script type="text/javascript" src="js/email.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="/js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="/js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="/js/google-map.js"></script>
+    <script type="text/javascript" src="/js/email.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
    
 </body>
 
