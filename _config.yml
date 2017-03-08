@@ -8,6 +8,8 @@ collections:
   methodes:
     title: Methodes
     output: true
+    titre: comment on bosse
+    description: wdfdsg
   posts:
     title: Posts
     output: true
