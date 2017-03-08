@@ -35,10 +35,13 @@ defaults:
   values:
     layout: page
 permalink: pretty
+favicon-image: 
+meta-title: 
+meta-description: 
 logo: 
 background-image: 
-titre: 
-subtitle: 
+slogan: 
+sous-slogan: 
 boutton: 
 texte-boutton: 
 lien-boutton: 
