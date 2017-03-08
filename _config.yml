@@ -35,6 +35,7 @@ defaults:
   values:
     layout: page
 permalink: pretty
+meta-description: 
 logo: 
 background-image: 
 titre: 
