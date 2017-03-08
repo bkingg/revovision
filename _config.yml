@@ -5,6 +5,9 @@ collections:
   menus:
     title: Menus
     output: true
+  methodes:
+    title: Methodes
+    output: true
   posts:
     title: Posts
     output: true
