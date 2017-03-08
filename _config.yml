@@ -1,0 +1,50 @@
+---
+title: Revovision
+timezone: UTC
+collections:
+  menus:
+    title: Menus
+    output: true
+  methodes:
+    title: Methodes
+    output: true
+    titre: comment on bosse
+    description: wdfdsg
+  posts:
+    title: Posts
+    output: true
+  realisations:
+    title: Realisations
+    output: true
+  services:
+    title: Services
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+permalink: pretty
+logo: 
+background-image: 
+titre: 
+subtitle: 
+boutton: 
+texte-boutton: 
+lien-boutton: 
+email-contact: 
+pre-footer-text-1: 
+pre-footer-text-2: 
+pre-footer-boutton: 
+pre-footer-boutton-texte: 
+pre-footer-boutton-lien: 
