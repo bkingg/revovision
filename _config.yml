@@ -34,6 +34,7 @@ defaults:
     type: pages
   values:
     layout: page
+description: Agence de Developpement Web.
 permalink: pretty
 favicon-image: 
 meta-title: Site Web personalises
