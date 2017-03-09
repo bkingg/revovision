@@ -21,46 +21,9 @@
     <link rel="stylesheet" href="/js/revolutionslider//css/settings.css" />
     <link rel="stylesheet" href="/js/revolutionslider//css/navigation.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
-   <!-- Particle css -->
-    <style>
-        .count-particles {
-            background: #000022;
-            position: absolute;
-            top: 48px;
-            left: 0;
-            width: 80px;
-            color: #13E8E9;
-            font-size: .8em;
-            text-align: left;
-            text-indent: 4px;
-            line-height: 14px;
-            padding-bottom: 2px;
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: bold;
-        }
-        
-        .js-count-particles {
-            font-size: 1.1em;
-        }
-        
-        #stats,
-        .count-particles {
-            -webkit-user-select: none;
-            margin-top: 5px;
-            margin-left: 5px;
-        }
-        
-        #stats {
-            border-radius: 3px 3px 0 0;
-            overflow: hidden;
-        }
-        
-        .count-particles {
-            border-radius: 0 0 3px 3px;
-        }
-    </style>
-    <!-- /Particle css -->
+   
 </head>
 
 
@@ -70,7 +33,7 @@
    
     <!-- /Page-loader -->
 
-    <!-- Screen Frame -->
+    <!-- Screen Frame - ->
     <div class="screen-frame">
         <div class="bar-top"></div>
         <div class="bar-btm"></div>
@@ -141,11 +104,11 @@
 
     <!-- Full Screen Image Parallax -->
     <header>
-        <div id="home" class="fs-img-parallax parallax parallax-overlay-dark" style="background-image:url({{ site.background-image }})">
+        <div id="home" class="fs-img-parallax parallax parallax-overlay-dark" style="/* background-image:url({{ site.background-image }}) */">
             <div class="hero-caption caption-center caption-height-center container">
               <h2 class="hero-heading text-xform-none">{{ site.slogan | upcase }}</h2>
                 <p class="hero-text-alt text-white">{{ site.sous-slogan }}</p>
-                <a class="scroll-to btn btn-md btn-style-3 mrg-top-15" href="{{ site.lien.boutton }}">{{ site.texte-boutton }}</a>
+                <a class="scroll-to btn btn-md btn-style-3 mrg-top-15" href="{{ site.lien-boutton }}">{{ site.texte-boutton }}</a>
             </div>
             <!-- /hero-caption -->
             <div id="particles-js"></div>
@@ -504,7 +467,7 @@
                <!-- /column -->
 
                <div class="col-sm-3">
-                   <a href="{{ site.pre-footer-boutton-lien }}" class="btn btn-lg btn-style-3 mrg-top-25">{{ site.pre-footer-boutton-text }}</a>
+                   <a href="{{ site.pre-footer-boutton-lien }}" class="scroll-to btn btn-lg btn-style-3 mrg-top-25">{{ site.pre-footer-boutton-texte }}</a>
                </div>
                <!-- /column -->
 
@@ -716,7 +679,7 @@
     <!-- /particleground -->
     <script type="text/javascript" src="/js/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="/js/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="/js/google-map.js"></script>
+    <!--<script type="text/javascript" src="/js/google-map.js"></script>-->
     <script type="text/javascript" src="/js/email.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
    
