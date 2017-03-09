@@ -36,17 +36,19 @@ defaults:
     layout: page
 permalink: pretty
 favicon-image: 
-meta-title: 
-meta-description: 
-logo: 
-background-image: 
-slogan: 
-sous-slogan: 
-texte-boutton: 
-lien-boutton: 
-email-contact: 
-pre-footer-text-1: 
-pre-footer-text-2: 
-pre-footer-boutton-texte: 
-pre-footer-boutton-lien: 
-footer-text: 
+meta-title: Site Web personalises
+meta-description: Revovision cree des sites webs personalises a partir de designs
+  personalises qui representent votre identite visuelle
+logo: "/uploads/logo.png"
+background-image: "/uploads/arriere.jpg"
+slogan: REVOVISION
+sous-slogan: Des sites webs qui vous ressemblent
+texte-boutton: Services Offerts
+lien-boutton: "#services"
+email-contact: contact@revovision.ca
+pre-footer-text-1: Gardez votre identite visuelle
+pre-footer-text-2: Des sites web personalises avec une experience utilisateur hors
+  du commun
+pre-footer-boutton-texte: Contactez Nous
+pre-footer-boutton-lien: "#footer"
+footer-text: Revovision, votre integrateur de site web personalise.
