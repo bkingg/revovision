@@ -4,4 +4,4 @@ date: 2017-03-09 07:50:00 Z
 position: 2
 ---
 
-Mise en route du projet ou mandat selon le plan d'action etabli dans la phase precedente.
+Mise en route du projet ou mandat selon le plan d'action établi dans la phase de Développement.
