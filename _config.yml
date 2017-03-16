@@ -34,12 +34,13 @@ defaults:
     type: pages
   values:
     layout: page
-description: Agence de Developpement Web.
+description: Revovision crée des sites webs personalisés à partir de designs personalisés
+  qui représentent votre identité visuelle.
 permalink: pretty
 favicon-image: 
 meta-title: Site Web personalises
-meta-description: Revovision cree des sites webs personalises a partir de designs
-  personalises qui representent votre identite visuelle
+meta-description: Revovision crée des sites webs personalisés à partir de designs
+  personalisés qui représentent votre identité visuelle.
 logo: "/uploads/logo.png"
 background-image: "/uploads/arriere.jpg"
 slogan: REVOVISION
@@ -47,10 +48,10 @@ sous-slogan: Des sites webs qui vous ressemblent
 texte-boutton: Services Offerts
 lien-boutton: "#services"
 email-contact: contact@revovision.ca
-pre-footer-background-image: 
+pre-footer-background-image: "/uploads/technlogie.jpg"
 pre-footer-text-1: Gardez votre identite visuelle
 pre-footer-text-2: Des sites web personalises avec une experience utilisateur hors
   du commun
 pre-footer-boutton-texte: Contactez Nous
 pre-footer-boutton-lien: "#footer"
-footer-text: Revovision, votre integrateur de site web personalise.
+footer-text: Revovision, votre intégrateur de site web personalisé.
