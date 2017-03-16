@@ -5,4 +5,4 @@ position: 2
 image: "/uploads/development.jpg"
 ---
 
-Mise en route du projet ou mandat selon le plan d'action établi dans la phase de Développement.
+Mise en route du projet ou mandat selon le plan d'action établi dans la phase de Design / Conception.
