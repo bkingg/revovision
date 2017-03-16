@@ -1,7 +1,7 @@
 ---
 title: Developpement
 date: 2017-03-09 07:50:00 Z
-position: 3
+position: 2
 ---
 
 Mise en route du projet ou mandat selon le plan d'action etabli dans la phase precedente.
