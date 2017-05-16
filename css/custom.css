@@ -1,0 +1,49 @@
+.flash-msg {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 10000;
+}
+
+.product-name{
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.px60{
+	width: 60px;
+}
+.text-bold{
+	font-weight: bold;
+}
+#cartbutton a, #cartbutton a:hover{
+	color: white;
+	margin-top: 0;
+	margin-bottom: 0; 
+	margin-left: 0;
+	margin-right: 0;
+}
+.product-info .price .discount-price {
+    font-weight: normal;
+    color: #ce362f;
+    font-size: 20px;
+}
+body{
+   /* background-image: url('../images/bg.png'); */
+    background-repeat: repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    color: #333;
+}
+
+footer{
+	
+}
+.container{
+	background: white;
+}
+a{
+	color: #333;
+	font-weight: 600;
+}
