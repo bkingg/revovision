@@ -104,10 +104,10 @@
 
     <!-- Full Screen Image Parallax -->
     <header>
-        <div id="home" class="fs-img-parallax parallax parallax-overlay-dark" style="/* background-image:url({{ site.background-image }}) */">
+        <div id="home" class="fs-img-parallax parallax parallax-overlay-dark" style=" background-image:url({{ site.background-image }})">
             <div class="hero-caption caption-center caption-height-center container">
               <h2 class="hero-heading text-xform-none">{{ site.slogan | upcase }}</h2>
-                <p class="hero-text-alt text-white">{{ site.sous-slogan }}</p>
+                <h5 class="hero-text-alt text-white">{{ site.sous-slogan }}</h5>
                 <a class="scroll-to btn btn-md btn-style-3 mrg-top-15" href="{{ site.lien-boutton }}">{{ site.texte-boutton }}</a>
             </div>
             <!-- /hero-caption -->
@@ -119,15 +119,13 @@
 
     <!-- About -->
     <section id="about" class="section">
-    
         <div class="container">
             <div class="col-sm-6">
-                <h2 class="heading-left">A Propos</h2>
-                <p class="sub-heading-left mrg-top-50 ">{{ site.slogan }}</p>
-                <p class="mrg-top-15 text-justify">{{ site.description | escape }}</p>
+                <h4 class="hero-heading inline-block border border-dark thick-md pdd-vertical-30 pdd-horizon-30"><b>A Propos</b></h4>
+                <h3 class="sub-heading-left mrg-top-50 text-justify">{{ site.description | escape }}</h3>
             </div>
             <!-- /column -->
-            <div class="col-sm-6 mrg-top-70 pdd-horizon-50">
+            <div class="col-sm-6 mrg-top-20 pdd-horizon-50">
                 <h5 class="progress-item">Web Development/SEO</h5>
                 <div class="progress progress-thin">
                     <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
@@ -162,11 +160,14 @@
     </section>
     <!-- /About -->
     <!-- services -->
-       <section id="services" class="section bg-gray">
+       <section id="services" class="section parallax  parallax-overlay-dark bg-gray" style=" background-image:url({{ site.background-image }})">
+          <div class="container text-center">
+            <div class="text-center pdd-btm-30">
+                <h4 class="hero-heading inline-block border border-light thick-md pdd-vertical-30 pdd-horizon-30"><b>Nos services</b></h4>
+            </div>
+            <!-- /text-center -->
+          </div>
            <div class="container">
-               <h2 class="heading">Nos services</h2>
-                <p class="sub-heading">{{ site.services.sous-titre }}</p>
-
                <div class="row">
                    <div class="owl-carousl owl-3-pag owl-pagi-1 pagi-center mrg-top-50">
                         {% for service in site.services %}
@@ -177,8 +178,8 @@
                                             <i class="{{ service.icon-class }}"></i>
                                         </div>
                                         <!-- /infography-icon -->
-                                        <h4 class="mrg-top-30">{{ service.title }}</h4>
-                                        <p class="mrg-top-15">{{ service.content }}</p>
+                                        <h3 style="color: grey;" class="mrg-top-30">{{ service.title }}</h3>
+                                        <h6 style="color: grey;" class="mrg-top-15">{{ service.content }}</h6>
                                     </div>
                                     <!-- /inner-wrapper -->
                                 </div>
@@ -281,15 +282,19 @@
   
 
     <!-- Work Flow -->
+   
     <section id="methodes" class="section bg-gray">
+        <div class="container text-center">
+            <div class="text-center pdd-btm-30">
+                <h4 class="hero-heading inline-block border border-dark thick-md pdd-vertical-30 pdd-horizon-30"><b>Nos Methodes</b></h4>
+            </div>
+            <!-- /text-center -->
+        </div>
         <div class="container">
-            <h2 class="heading">Nos Methodes</h2>
-            <p class="mrg-top-70 text-center">{{ site.services.sous-titre }}</p>
-
             <div class="work-flow-1 mrg-top-70">
 
                 {% for methode in site.methodes %}
-                    <div class="{% cycle 'right', 'left' %} ">
+                    <div class="{% cycle 'right'%} ">
                         <div class="col-sm-6">
                             <img class="img-responsive" src="{{ methode.image }}" alt="{{ methode.title | escape }}">
                         </div>
@@ -316,9 +321,21 @@
 
 
      <!-- Portfolio -->
+     <!-- Heading Dark Background -->
+     <section id="services" class="section parallax  parallax-overlay-dark bg-gray" style=" background-image:url({{ site.background-image }}); padding: 50px;">
+    
+        <div class="container">
+            <div class="text-center">
+                <h4 class="hero-heading inline-block border thick-md pdd-vertical-30 pdd-horizon-30"><b>Nos Realisations</b></h4>
+            </div>
+            <!-- /text-center -->
+        </div>
+        <!-- /container -->
+    </section>
+    <!-- /Heading Dark Background -->
     <section id="portfolio" class="section">
         <div class="container">
-            <h2 class="heading">Realisations</h2>
+            
             <!-- <p class="sub-heading">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>-->
 
             <!--<div class="portfolio-filter-group text-center folio-fillter-2 mrg-top-50 mrg-btm-30">
@@ -458,7 +475,7 @@
 
 
    <!-- Call To Action -->
-       <section id="cta" class="section-3 parallax no-border" style="background-image:url({{ site.pre-footer-background-image }})">
+       <section id="cta" class="section-3 parallax parallax-overlay-dark bg-gray no-border" style=" background-image:url({{ site.background-image }})">
            <div class="container">
                <div class="col-sm-9">
                    <p class="droid-serif-italic ls-1-5 text-gray">{{ site.pre-footer-text-1 }}</p>
