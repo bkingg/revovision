@@ -34,21 +34,25 @@
   font-size: 16px;
   color: white;
   font-weight: bold; }
-  .menu-transparent .navbar ul.nav.navbar-nav > li > a:hover {
-    color: #199fc3; }
   @media (max-width: 991px) {
     .menu-transparent .navbar ul.nav.navbar-nav > li > a {
       color: #199fc3; } }
+.menu-transparent .navbar ul.nav.navbar-nav > li:hover > a, .menu-transparent .navbar ul.nav.navbar-nav > li:active > a, .menu-transparent .navbar ul.nav.navbar-nav > li:focus > a, .menu-transparent .navbar ul.nav.navbar-nav > li.active > a {
+  color: #199fc3; }
+  .menu-transparent .navbar ul.nav.navbar-nav > li:hover > a:hover, .menu-transparent .navbar ul.nav.navbar-nav > li:hover > a:active, .menu-transparent .navbar ul.nav.navbar-nav > li:hover > a:focus, .menu-transparent .navbar ul.nav.navbar-nav > li:active > a:hover, .menu-transparent .navbar ul.nav.navbar-nav > li:active > a:active, .menu-transparent .navbar ul.nav.navbar-nav > li:active > a:focus, .menu-transparent .navbar ul.nav.navbar-nav > li:focus > a:hover, .menu-transparent .navbar ul.nav.navbar-nav > li:focus > a:active, .menu-transparent .navbar ul.nav.navbar-nav > li:focus > a:focus, .menu-transparent .navbar ul.nav.navbar-nav > li.active > a:hover, .menu-transparent .navbar ul.nav.navbar-nav > li.active > a:active, .menu-transparent .navbar ul.nav.navbar-nav > li.active > a:focus {
+    color: #199fc3; }
 
 .menu-sticky .navbar ul.nav.navbar-nav > li > a {
   font-size: 16px;
   font-weight: bold;
   color: #333; }
-  .menu-sticky .navbar ul.nav.navbar-nav > li > a:hover {
-    color: #199fc3; }
   @media (max-width: 991px) {
     .menu-sticky .navbar ul.nav.navbar-nav > li > a {
       color: #199fc3; } }
+.menu-sticky .navbar ul.nav.navbar-nav > li:hover > a, .menu-sticky .navbar ul.nav.navbar-nav > li:active > a, .menu-sticky .navbar ul.nav.navbar-nav > li:focus > a, .menu-sticky .navbar ul.nav.navbar-nav > li.active > a {
+  color: #199fc3; }
+  .menu-sticky .navbar ul.nav.navbar-nav > li:hover > a:hover, .menu-sticky .navbar ul.nav.navbar-nav > li:hover > a:active, .menu-sticky .navbar ul.nav.navbar-nav > li:hover > a:focus, .menu-sticky .navbar ul.nav.navbar-nav > li:active > a:hover, .menu-sticky .navbar ul.nav.navbar-nav > li:active > a:active, .menu-sticky .navbar ul.nav.navbar-nav > li:active > a:focus, .menu-sticky .navbar ul.nav.navbar-nav > li:focus > a:hover, .menu-sticky .navbar ul.nav.navbar-nav > li:focus > a:active, .menu-sticky .navbar ul.nav.navbar-nav > li:focus > a:focus, .menu-sticky .navbar ul.nav.navbar-nav > li.active > a:hover, .menu-sticky .navbar ul.nav.navbar-nav > li.active > a:active, .menu-sticky .navbar ul.nav.navbar-nav > li.active > a:focus {
+    color: #199fc3; }
 
 /* Particle css */
 h2.hero-heading {

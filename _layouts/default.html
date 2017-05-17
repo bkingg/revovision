@@ -88,7 +88,8 @@
 
                   <div class="custom-collapse navbar-collapse collapse inner-nav">
                       <ul class="nav navbar-nav">
-                          {% for menu in site.menus %}
+                          {% assign menus = site.menus | sort: 'position' %}
+                          {% for menu in menus  %}
                               <li><a class="scroll-to" href="{{ menu.lien }}">{{ menu.title }}</a></li>
                           {% endfor %}
                       </ul>
@@ -478,7 +479,7 @@
        <section id="cta" class="section-3 parallax parallax-overlay-dark bg-gray no-border" style=" background-image:url({{ site.background-image }})">
            <div class="container">
                <div class="col-sm-9">
-                   <p class="droid-serif-italic ls-1-5 text-gray">{{ site.pre-footer-text-1 }}</p>
+                   <p class="droid-serif-italic ls-1-5 text-white">{{ site.pre-footer-text-1 }}</p>
                    <h3 class="ls-5 text-white">{{ site.pre-footer-text-2 }}</h3>
                </div>
                <!-- /column -->
