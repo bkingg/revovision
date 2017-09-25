@@ -1,3 +1,18 @@
 ---
 hide_body: true
-fields: []
+fields:
+- type: text
+  name: title
+  label: Titre
+  config:
+    required: true
+- type: text
+  name: lien
+  label: Lien
+  config:
+    required: true
+- type: file
+  name: image
+  label: Image
+  config:
+    maxSize: '1'
