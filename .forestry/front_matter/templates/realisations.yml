@@ -1,4 +1,6 @@
 ---
+pages:
+- _realisations/smbs.markdown
 hide_body: true
 fields:
 - type: text
