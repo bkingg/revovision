@@ -1,6 +1,6 @@
 ---
 title: Proposition
-date: 2017-03-08 03:30:00 Z
+date: 2017-03-08 03:30:00 +0000
 position: 0
 image: "/uploads/proposal.jpg"
 ---
