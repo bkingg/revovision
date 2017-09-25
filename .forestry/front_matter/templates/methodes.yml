@@ -1,0 +1,13 @@
+---
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Titre
+  config:
+    required: true
+- type: file
+  name: image
+  label: Image
+  config:
+    maxSize: '1'
