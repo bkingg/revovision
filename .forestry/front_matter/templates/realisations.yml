@@ -1,5 +1,6 @@
 ---
 pages:
+- _realisations/iaer-solutions.markdown
 - _realisations/elbo-suites.markdown
 - _realisations/smbs.markdown
 hide_body: true
