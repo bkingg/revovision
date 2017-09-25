@@ -42,66 +42,66 @@
     </div>
     <!-- /screen frame -->
 
-   <!-- Navigation -->
-      <nav class="main-nav op-nav menu-light menu-transparent js-transparent">
-          <div class="container">
-              <div class="navbar">
+    <!-- Navigation -->
+    <nav class="main-nav op-nav menu-light menu-transparent js-transparent">
+        <div class="container">
+            <div class="navbar">
 
-                  <div class="brand-logo">
-                      <a class="navbar-brand" href="#">
-                          <img src="{{ site.logo }}" alt="{{ site.title }}">
-                      </a>
-                  </div>
-                  <!-- brand-logo -->
+                <div class="brand-logo">
+                    <a class="navbar-brand" href="#">
+                        <img src="{{ site.logo }}" alt="{{ site.title }}">
+                    </a>
+                </div>
+                <!-- brand-logo -->
 
-                  <div class="navbar-header">
-                      <div class="inner-nav right-nav">
-                          <ul>
-                              <li>
-                                  <a href="#/" class="ti-search" id='search-trigger'></a>
-                              </li>
+                {% comment %} <div class="navbar-header">
+                    <div class="inner-nav right-nav">
+                        <ul>
+                            <li>
+                                <a href="#/" class="ti-search" id='search-trigger'></a>
+                            </li>
 
-                              <li class="navbar-toggle">
-                                  <button type="button" data-toggle="collapse" data-target=".collapse">
-                                      <span class="sr-only"></span>
-                                      <i class="ti-menu"></i>
-                                  </button>
-                              </li>
-                              <!-- /collapse-menu -->
+                            <li class="navbar-toggle">
+                                <button type="button" data-toggle="collapse" data-target=".collapse">
+                                    <span class="sr-only"></span>
+                                    <i class="ti-menu"></i>
+                                </button>
+                            </li>
+                            <!-- /collapse-menu -->
 
-                          </ul>
-                          <form action='#' id='search' method='get'>
-                              <div class="input">
-                                  <div class="container">
-                                      <input class="search" placeholder='Search...' type='text'>
-                                      <button class="submit ti-search" type="submit" value="close"></button>
-                                  </div>
-                                  <!-- /container -->
-                              </div>
-                              <!-- /input -->
-                              <button class="ti-close" id="close" type="reset"></button>
-                          </form>
-                      </div>
-                      <!-- /right-nav -->
-                  </div>
-                  <!-- navbar-header -->
+                        </ul>
+                        <form action='#' id='search' method='get'>
+                            <div class="input">
+                                <div class="container">
+                                    <input class="search" placeholder='Search...' type='text'>
+                                    <button class="submit ti-search" type="submit" value="close"></button>
+                                </div>
+                                <!-- /container -->
+                            </div>
+                            <!-- /input -->
+                            <button class="ti-close" id="close" type="reset"></button>
+                        </form>
+                    </div>
+                    <!-- /right-nav -->
+                </div>
+                <!-- navbar-header --> {% endcomment %}
 
-                  <div class="custom-collapse navbar-collapse collapse inner-nav">
-                      <ul class="nav navbar-nav">
-                          {% assign menus = site.menus | sort: 'position' %}
-                          {% for menu in menus  %}
-                              <li><a class="scroll-to" href="{{ menu.lien }}">{{ menu.title }}</a></li>
-                          {% endfor %}
-                      </ul>
-                      <!-- /nav -->
-                  </div>
-                  <!-- /collapse -->
-              </div>
-              <!-- /navbar -->
-          </div>
-          <!-- /container -->
-      </nav>
-      <!--/#Navigation-->
+                <div class="custom-collapse navbar-collapse collapse inner-nav">
+                    <ul class="nav navbar-nav">
+                        {% assign menus = site.menus | sort: 'position' %}
+                        {% for menu in menus  %}
+                            <li><a class="scroll-to" href="{{ menu.lien }}">{{ menu.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    <!-- /nav -->
+                </div>
+                <!-- /collapse -->
+            </div>
+            <!-- /navbar -->
+        </div>
+        <!-- /container -->
+    </nav>
+    <!--/#Navigation-->
 
     <!-- Full Screen Image Parallax -->
     <header>
@@ -160,43 +160,44 @@
         <!-- /container -->
     </section>
     <!-- /About -->
-    <!-- services -->
-       <section id="services" class="section parallax  parallax-overlay-dark bg-gray" style=" background-image:url({{ site.background-image }})">
-          <div class="container text-center">
-            <div class="text-center pdd-btm-30">
-                <h4 class="hero-heading inline-block border border-light thick-md pdd-vertical-30 pdd-horizon-30"><b>Nos services</b></h4>
-            </div>
-            <!-- /text-center -->
-          </div>
-           <div class="container">
-               <div class="row">
-                   <div class="owl-carousl owl-3-pag owl-pagi-1 pagi-center mrg-top-50">
-                        {% for service in site.services %}
-                            <div class="infography item">
-                                <div class="infography-style-4 bg-white">
-                                    <div class="inner-wrapper">
-                                        <div class="infography-icon">
-                                            <i class="{{ service.icon-class }}"></i>
-                                        </div>
-                                        <!-- /infography-icon -->
-                                        <h2 style="color: #323232;" class="mrg-top-30 text-center">{{ service.title }}</h2>
-                                        <h6 style="color: #323232;" class="mrg-top-15 text-center text-justify">{{ service.content }}</h6>
-                                    </div>
-                                    <!-- /inner-wrapper -->
-                                </div>
-                                <!-- /infography-style-4 -->
-                            </div>
-                            <!-- /infography -->
-                        {% endfor %}
 
-                   </div>
-                   <!-- owl-3-item -->
-               </div>
-               <!-- /row -->
-           </div>
-           <!-- /container -->
-       </section>
-       <!-- /#Services -->
+    <!-- Services -->
+    <section id="services" class="section parallax  parallax-overlay-dark bg-gray" style=" background-image:url({{ site.background-image }})">
+        <div class="container text-center">
+        <div class="text-center pdd-btm-30">
+            <h4 class="hero-heading inline-block border border-light thick-md pdd-vertical-30 pdd-horizon-30"><b>Nos services</b></h4>
+        </div>
+        <!-- /text-center -->
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="owl-carousl owl-3-pag owl-pagi-1 pagi-center mrg-top-50">
+                    {% for service in site.services %}
+                        <div class="infography item">
+                            <div class="infography-style-4 bg-white">
+                                <div class="inner-wrapper">
+                                    <div class="infography-icon">
+                                        <i class="{{ service.icon-class }}"></i>
+                                    </div>
+                                    <!-- /infography-icon -->
+                                    <h2 style="color: #323232;" class="mrg-top-30 text-center">{{ service.title }}</h2>
+                                    <h6 style="color: #323232;" class="mrg-top-15 text-center text-justify">{{ service.content }}</h6>
+                                </div>
+                                <!-- /inner-wrapper -->
+                            </div>
+                            <!-- /infography-style-4 -->
+                        </div>
+                        <!-- /infography -->
+                    {% endfor %}
+
+                </div>
+                <!-- owl-3-item -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </section>
+    <!-- /#Services -->
     <!-- /Services -->
 
     
@@ -276,14 +277,9 @@
         <!-- /container - ->
     </section>
     <!-- /#Features -->
-
-   
-   
-
   
 
     <!-- Work Flow -->
-   
     <section id="methodes" class="section bg-gray">
         <div class="container text-center">
             <div class="text-center pdd-btm-30">
