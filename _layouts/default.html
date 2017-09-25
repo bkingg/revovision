@@ -54,12 +54,12 @@
                 </div>
                 <!-- brand-logo -->
 
-                {% comment %} <div class="navbar-header">
+                <div class="navbar-header">
                     <div class="inner-nav right-nav">
                         <ul>
-                            <li>
+                            {% comment %} <li>
                                 <a href="#/" class="ti-search" id='search-trigger'></a>
-                            </li>
+                            </li> {% endcomment %}
 
                             <li class="navbar-toggle">
                                 <button type="button" data-toggle="collapse" data-target=".collapse">
@@ -70,7 +70,7 @@
                             <!-- /collapse-menu -->
 
                         </ul>
-                        <form action='#' id='search' method='get'>
+                        {% comment %} <form action='#' id='search' method='get'>
                             <div class="input">
                                 <div class="container">
                                     <input class="search" placeholder='Search...' type='text'>
@@ -80,11 +80,11 @@
                             </div>
                             <!-- /input -->
                             <button class="ti-close" id="close" type="reset"></button>
-                        </form>
+                        </form> {% endcomment %}
                     </div>
                     <!-- /right-nav -->
                 </div>
-                <!-- navbar-header --> {% endcomment %}
+                <!-- navbar-header -->
 
                 <div class="custom-collapse navbar-collapse collapse inner-nav">
                     <ul class="nav navbar-nav">
