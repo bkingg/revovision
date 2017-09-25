@@ -37,22 +37,26 @@
             if(error == false){
                // Disable submit button just after the form processed 1st time successfully.
                 
-                $('#send_message').attr({'enabled' : 'enable', 'value' : 'Sending...' });
+                $('#send_message').attr({'enabled' : 'enable', 'value' : 'envoi en cours...' });
                 
-				/* Post Ajax function of jQuery to get all the data from the submission of the form as soon as the form sends the values to email.php*/
-                $.post($('#contact_form').attr('action'), $("#contact_form").serialize(),function(result){
-                    //Check the result set from email.php file.
-                    if(result == 'sent'){
-                        //If the email is sent successfully, remove the submit button
-                         
-                         $('#send_message').attr({'enabled' : 'enable', 'value' : 'send' });
+                /* Post Ajax function of jQuery to get all the data from the submission of the form as soon as the form sends the values to email.php*/
+                $.ajax({
+                    url: 'https:' + '//formspree.io/' + 'gaspard' + '@' + 'revovision' + '.' + 'ca', 
+                    method: 'POST',
+                    data: $("#contact_form").serialize(),
+                    dataType: 'json',
+                    success: function(data){
+                        console.log('success', data);
+                        $('#send_message').attr({'enabled' : 'enable', 'value' : 'envoyer' });
                         //Display the success message
                         $('#mail_success').fadeIn(500);
-                    }else{
+                    },
+                    error: function(data){
+                        console.log('error', data);
                         //Display the error message
                         $('#mail_fail').fadeIn(500);
                         // Enable the submit button again
-                        $('#send_message').removeAttr('disabled').attr('value', 'Send The Message');
+                        $('#send_message').removeAttr('disabled').attr('value', 'Envoyer le message');
                     }
                 });
             }

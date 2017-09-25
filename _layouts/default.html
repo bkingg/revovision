@@ -526,7 +526,10 @@
                        <!-- widget-tittle -->
 
                        <div class="contact-form-widget mrg-top-30">
-                           <form class="contact-form-wrapper row" name="contactForm" id="contact_form" method="post" action="https://formspree.io/{{ site.email-contact }}">
+                           <form class="contact-form-wrapper row" name="contactForm" id="contact_form" method="post" action="?">
+                                <input type="hidden" name="_format" value="plain" />
+                                <input type="hidden" name="_language" value="fr" />
+                                <input type="text" name="_gotcha" style="display:none" />
                                <div class="form-inside">
                                    <div class="form-group col-sm-6">
                                        <input type="text" class="form-control" name="name" id="exampleInputName" placeholder="Nom">
@@ -555,18 +558,18 @@
 
                                <div class="form-group col-xs-12">
                                    <div id="mail_success" class="success" style="display:none;">
-                                       Thank You ! Your email has been delivered.
+                                       Merci! Votre email a été envoyé !
                                    </div>
                                    <!-- /mail_success -->
                                    <div id="mail_fail" class="error" style="display:none;">
-                                       An error occured, please try again later !
+                                       Une erreur s'est produites. Veuillez Réessayer !
                                    </div>
                                    <!-- /mail_error -->
                                </div>
                                <!-- /form-group -->
 
                                <div class="form-group col-sm-12" id="submit">
-                                   <input class="btn btn-lg footer-contact-btn pull-right" type="submit" id="send_message" value="Envoyer Message">
+                                   <input class="btn btn-lg footer-contact-btn pull-right" type="submit" id="send_message" value="Envoyer le Message">
                                </div>
                                <!-- /form-group -->
                            </form>
