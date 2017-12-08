@@ -1,9 +1,9 @@
 ---
 pages:
-- _methodes/design.markdown
-- _methodes/design-05a4a8.markdown
-- _methodes/developpement.markdown
 - _methodes/livraison.markdown
+- _methodes/developpement.markdown
+- _methodes/design-05a4a8.markdown
+- _methodes/design.markdown
 hide_body: false
 fields:
 - type: text

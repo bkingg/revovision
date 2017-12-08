@@ -1,13 +1,13 @@
 ---
 pages:
-- _realisations/topmenu.markdown
-- _realisations/chez-khady.markdown
-- _realisations/club-electronic.markdown
-- _realisations/snzik.markdown
-- _realisations/independance-immobiliere.markdown
-- _realisations/iaer-solutions.markdown
-- _realisations/elbo-suites.markdown
 - _realisations/smbs.markdown
+- _realisations/elbo-suites.markdown
+- _realisations/iaer-solutions.markdown
+- _realisations/independance-immobiliere.markdown
+- _realisations/snzik.markdown
+- _realisations/club-electronic.markdown
+- _realisations/chez-khady.markdown
+- _realisations/topmenu.markdown
 hide_body: true
 fields:
 - type: text
