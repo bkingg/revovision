@@ -1,0 +1,181 @@
+---
+---
+
+$color-brand: #20c9f3;
+$black: #333;
+$color-overlay: #20c9f3;
+$overlay-opacity: 0.7;
+
+@import 'vendor/bootstrap.min';
+@import 'vendor/animate.min';
+@import 'vendor/font-awesome.min';
+@import 'vendor/themify-icons';
+@import 'vendor/YTPlayer';
+@import 'vendor/owl.carousel';
+@import 'vendor/magnific-popup';
+@import 'main';
+@import 'responsive';
+
+body{
+    
+}
+
+/* Particle css */
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+.menu-transparent{
+    .navbar{
+        ul.nav.navbar-nav{
+            > li{
+                > a{
+                    font-size: 16px;
+                    color: white;
+                    font-weight: bold;
+                    @media (max-width: 991px){
+                        color: $color-brand;
+                    }
+                }
+                &:hover,
+                &:active,
+                &:focus,
+                &.active{
+                    > a{
+                        color: $color-brand;
+                        &:hover,
+                        &:active,
+                        &:focus{
+                            color: $color-brand;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.menu-sticky{
+    .navbar{
+        ul.nav.navbar-nav{
+            > li{
+                > a{
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #333;
+                    @media (max-width: 991px){
+                        color: $color-brand;
+                    }
+                }
+                &:hover,
+                &:active,
+                &:focus,
+                &.active{
+                    > a{
+                        color: $color-brand;
+                        &:hover,
+                        &:active,
+                        &:focus{
+                            color: $color-brand;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* Particle css */
+
+h2.hero-heading {
+    font-size: 45px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.hero-text-alt {
+    font-size: 20px;
+}
+.parallax{
+    background-color: $color-brand;
+}
+
+.work-flow-content {
+    h2{
+        font-weight: bold;
+    }
+    p{
+        text-transform: none;
+    }
+}
+.infography {
+    h2{
+        color: $black;
+        font-weight: bold;
+    }
+    p{
+        color: $black;
+        text-transform: none;
+    }
+}
+
+#about{
+    h3{
+        text-transform: none;
+    }
+}
+
+#home,
+#services,
+#cta{
+    background: linear-gradient( rgba($color-overlay, $overlay-opacity), rgba($color-overlay, $overlay-opacity) ), url({{ site.background-image }});
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.methode-image{
+    position: relative;
+    &:before{
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba($color-brand, 0.2);
+        -moz-transition: background .3s linear;
+        -webkit-transition: background .3s linear;
+        -o-transition: background .3s linear;
+        transition: background .3s linear;
+    }
+}

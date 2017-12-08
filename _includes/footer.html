@@ -1,0 +1,114 @@
+    <footer id="footer" class="bg-dark pdd-btm-30">
+        <div class="container section">
+            <div class="col-md-4 col-sm-12">
+                <div class="widget">
+                    <div class="more-about-us-widget">
+                        <img class="img-responsive" src="{{ site.logo }}" alt="{{ site.title }}">
+                        <p class="mrg-vertical-15">{{ site.footer-text }}</p>
+
+                        <div class="contact-info-widget mrg-top-30">
+                            <ul>
+                                <li><i class="ti-map"></i>Montreal, QC CANADA</li>
+                                <li><i class="ti-mobile"></i>+1 438 349 1758</li>
+                                <li><i class="ti-email"></i><a href="mailto:gabriel@revovision.
+                                ca">{{ site.email-contact }}</a></li>
+                                <li><i class="ti-world"></i><a href="#">www.revovision.ca</a></li>
+                            </ul>
+                        </div>
+                        <!-- /contact-inform-widget -->
+
+                    </div>
+                    <!-- /more-about-us-widget -->
+                </div>
+                <!-- /widget -->
+            </div>
+            <!-- /column -->
+
+            <div class="col-md-8 col-sm-12">
+                <div class="widget">
+                    <div class="widget-tittle">
+                        <h4>Contact</h4>
+                    </div>
+                    <!-- widget-tittle -->
+
+                    <div class="contact-form-widget mrg-top-30">
+                        <form class="contact-form-wrapper row" name="contactForm" id="contact_form" method="post" action="?">
+                                <input type="hidden" name="_format" value="plain" />
+                                <input type="hidden" name="_language" value="fr" />
+                                <input type="text" name="_gotcha" style="display:none" />
+                            <div class="form-inside">
+                                <div class="form-group col-sm-6">
+                                    <input type="text" class="form-control" name="name" id="exampleInputName" placeholder="Nom">
+                                </div>
+                                <!-- /form-group -->
+
+                                <div class="form-group col-sm-6">
+                                    <input type="email" class="form-control" name="email" id="exampleInputEmail" placeholder="Email">
+                                </div>
+                                <!-- /form-group -->
+
+                                <div class="form-group col-sm-12">
+                                    <input type="text" class="form-control" name="_subject" id="exampleInputSubject" placeholder="Objet">
+                                </div>
+                                <!-- /form-group -->
+
+                                <div class="form-group col-sm-12">
+                                    <textarea class="form-control" name="message" rows="3" id="exampleInputMessage" placeholder="Message"></textarea>
+                                </div>
+                                <!-- /form-group -->
+
+                                <input type="text" name="_gotcha" style="display:none" />
+
+                            </div>
+                            <!-- /form-inside -->
+
+                            <div class="form-group col-xs-12">
+                                <div id="mail_success" class="success" style="display:none;">
+                                    Merci! Votre email a été envoyé !
+                                </div>
+                                <!-- /mail_success -->
+                                <div id="mail_fail" class="error" style="display:none;">
+                                    Une erreur s'est produites. Veuillez Réessayer !
+                                </div>
+                                <!-- /mail_error -->
+                            </div>
+                            <!-- /form-group -->
+
+                            <div class="form-group col-sm-12" id="submit">
+                                <input class="btn btn-lg footer-contact-btn pull-right" type="submit" id="send_message" value="Envoyer le Message">
+                            </div>
+                            <!-- /form-group -->
+                        </form>
+                    </div>
+                    <!-- tag-widget -->
+                </div>
+                <!-- /widget -->
+            </div>
+            <!-- /column -->
+
+        </div>
+        <!-- /container -->
+
+        <div class="footer-bottom">
+            <div class="container">
+                <small class="copyright pull-left">© {{ 'now' | date: '%Y' }} <a href="#">{{ site.title | upcase }}</a>.</small>
+                <div class="social-icon pull-right">
+                    <a href="https://www.facebook.com/revovisionsenc/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/10951807/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <!-- /social-icon -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- footer-bottom -->
+    </footer>
+    <!-- Back to top -->
+    <a href="#" id="back-to-top" title="Back to top"><i class="ti-angle-up"></i></a>
+    <!-- /Back to top -->
+    
+    <!-- Java Script -->
+    <script type="text/javascript" src="/js/scripts.js"></script>
+   
+</body>
+
+</html>
