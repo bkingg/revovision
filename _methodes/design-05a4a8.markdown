@@ -1,6 +1,6 @@
 ---
 title: Design
-date: 2017-03-09 07:48:00 Z
+date: 2017-03-09 07:48:00 +0000
 position: 1
 image: "/uploads/design_2.jpg"
 ---
