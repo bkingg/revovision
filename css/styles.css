@@ -20031,11 +20031,11 @@ label {
   font-weight: bold; }
   @media (max-width: 991px) {
     .menu-transparent .navbar ul.nav.navbar-nav > li > a {
-      color: #20c9f3; } }
+      color: #1e90ff; } }
 .menu-transparent .navbar ul.nav.navbar-nav > li:hover > a, .menu-transparent .navbar ul.nav.navbar-nav > li:active > a, .menu-transparent .navbar ul.nav.navbar-nav > li:focus > a, .menu-transparent .navbar ul.nav.navbar-nav > li.active > a {
-  color: #20c9f3; }
+  color: #1e90ff; }
   .menu-transparent .navbar ul.nav.navbar-nav > li:hover > a:hover, .menu-transparent .navbar ul.nav.navbar-nav > li:hover > a:active, .menu-transparent .navbar ul.nav.navbar-nav > li:hover > a:focus, .menu-transparent .navbar ul.nav.navbar-nav > li:active > a:hover, .menu-transparent .navbar ul.nav.navbar-nav > li:active > a:active, .menu-transparent .navbar ul.nav.navbar-nav > li:active > a:focus, .menu-transparent .navbar ul.nav.navbar-nav > li:focus > a:hover, .menu-transparent .navbar ul.nav.navbar-nav > li:focus > a:active, .menu-transparent .navbar ul.nav.navbar-nav > li:focus > a:focus, .menu-transparent .navbar ul.nav.navbar-nav > li.active > a:hover, .menu-transparent .navbar ul.nav.navbar-nav > li.active > a:active, .menu-transparent .navbar ul.nav.navbar-nav > li.active > a:focus {
-    color: #20c9f3; }
+    color: #1e90ff; }
 
 .menu-sticky .navbar ul.nav.navbar-nav > li > a {
   font-size: 16px;
@@ -20043,11 +20043,11 @@ label {
   color: #333; }
   @media (max-width: 991px) {
     .menu-sticky .navbar ul.nav.navbar-nav > li > a {
-      color: #20c9f3; } }
+      color: #1e90ff; } }
 .menu-sticky .navbar ul.nav.navbar-nav > li:hover > a, .menu-sticky .navbar ul.nav.navbar-nav > li:active > a, .menu-sticky .navbar ul.nav.navbar-nav > li:focus > a, .menu-sticky .navbar ul.nav.navbar-nav > li.active > a {
-  color: #20c9f3; }
+  color: #1e90ff; }
   .menu-sticky .navbar ul.nav.navbar-nav > li:hover > a:hover, .menu-sticky .navbar ul.nav.navbar-nav > li:hover > a:active, .menu-sticky .navbar ul.nav.navbar-nav > li:hover > a:focus, .menu-sticky .navbar ul.nav.navbar-nav > li:active > a:hover, .menu-sticky .navbar ul.nav.navbar-nav > li:active > a:active, .menu-sticky .navbar ul.nav.navbar-nav > li:active > a:focus, .menu-sticky .navbar ul.nav.navbar-nav > li:focus > a:hover, .menu-sticky .navbar ul.nav.navbar-nav > li:focus > a:active, .menu-sticky .navbar ul.nav.navbar-nav > li:focus > a:focus, .menu-sticky .navbar ul.nav.navbar-nav > li.active > a:hover, .menu-sticky .navbar ul.nav.navbar-nav > li.active > a:active, .menu-sticky .navbar ul.nav.navbar-nav > li.active > a:focus {
-    color: #20c9f3; }
+    color: #1e90ff; }
 
 /* Particle css */
 h2.hero-heading {
@@ -20059,7 +20059,7 @@ h2.hero-heading {
   font-size: 20px; }
 
 .parallax {
-  background-color: #20c9f3; }
+  background-color: #1e90ff; }
 
 .work-flow-content h2 {
   font-weight: bold; }
@@ -20079,7 +20079,7 @@ h2.hero-heading {
 #home,
 #services,
 #cta {
-  background: linear-gradient(rgba(32, 201, 243, 0.7), rgba(32, 201, 243, 0.7)), url(/uploads/livraison.jpg);
+  background: linear-gradient(rgba(30, 144, 255, 0.7), rgba(30, 144, 255, 0.7)), url(/uploads/livraison.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -20093,7 +20093,7 @@ h2.hero-heading {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(32, 201, 243, 0.2);
+    background: rgba(30, 144, 255, 0.2);
     -moz-transition: background .3s linear;
     -webkit-transition: background .3s linear;
     -o-transition: background .3s linear;
