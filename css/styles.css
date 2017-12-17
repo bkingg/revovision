@@ -17021,11 +17021,11 @@ button {
   color: #fff;
   font-size: 15px;
   padding: 12px 12px;
-  background-color: #efb521;
+  background-color: #1e90ff;
   border-radius: 50px;
   -webkit-border-radius: 22px;
   margin: 10px;
-  border: 2px solid #EFB521;
+  border: 2px solid #1e90ff;
   display: inline-block; }
 
 .folio-style-1 .folio-links a:first-child i {
@@ -17046,7 +17046,7 @@ button {
 
 .folio-style-1 .folio-links a i:hover {
   background-color: transparent;
-  color: #efb521; }
+  color: #1e90ff; }
 
 /* Style 2 */
 .folio-style-2 .folio-image img,
