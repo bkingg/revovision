@@ -179,3 +179,36 @@ h2.hero-heading {
         transition: background .3s linear;
     }
 }
+
+.navbar-toggle i.ti-menu{
+    color: $color-brand !important;
+}
+
+.brand-logo img {
+    height: 20px !important;
+    position: relative;
+    display: block;
+    top: 35px;
+
+    .menu-sticky &{
+        top: 25px;
+    }
+}
+
+.hero-heading img{
+    max-width: 100%;
+    max-height: 90px;
+    padding: 20px;
+}
+
+.owl-pagi-1 .owl-pagination .owl-page span{
+    border-color: white;
+}
+
+.owl-pagi-1 .owl-pagination .owl-page.active span,
+.owl-pagi-1 .owl-pagination .owl-page:hover span {
+    background-color: white;
+    height: 7px;
+    width: 7px;
+    box-shadow: 0 0 0 2px white;
+}
