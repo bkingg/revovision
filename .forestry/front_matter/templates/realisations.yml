@@ -24,3 +24,23 @@ fields:
   type: file
   hidden: false
   default: ''
+- type: select
+  name: filtre
+  config:
+    source:
+      type: simple
+    options:
+    - appweb
+    - vitrine
+    - appmobile
+  label: filtre
+- type: select
+  name: type
+  config:
+    source:
+      type: simple
+    options:
+    - Applications Web
+    - Applications Mobile
+    - Site Web
+  label: type
