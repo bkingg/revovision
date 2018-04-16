@@ -36,6 +36,7 @@ fields:
     - appweb
     - vitrine
     - appmobile
+    - e-commerce
   label: filtre
 - type: select
   name: type
@@ -45,5 +46,6 @@ fields:
     options:
     - Applications Web
     - Applications Mobile
-    - Site Web
+    - Sites E-commerce
+    - Sites Web
   label: type
