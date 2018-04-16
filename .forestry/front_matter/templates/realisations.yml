@@ -1,5 +1,6 @@
 ---
 pages:
+- _realisations/elbo-suites.markdown
 - _realisations/smbs.markdown
 - _realisations/club-electronic.markdown
 - _realisations/snzik.markdown
