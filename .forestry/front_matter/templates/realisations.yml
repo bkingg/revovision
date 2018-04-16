@@ -1,5 +1,6 @@
 ---
 pages:
+- _realisations/iaer-solutions.markdown
 - _realisations/lave-auto-sunshine.md
 hide_body: false
 is_partial: false
