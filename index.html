@@ -215,10 +215,7 @@ layout: default
 </section>
 <!-- /#work-flow -->
 
-
-    <!-- Portfolio -->
-    <!-- Heading Dark Background -->
-    <section id="services" class="parallax  parallax-overlay-dark bg-gray" style="padding-top: 60px; padding-bottom: 60px;">
+<section id="services" class="parallax  parallax-overlay-dark bg-gray" style="padding-top: 60px; padding-bottom: 60px;">
 
     <div class="container">
         <div class="text-center">
@@ -229,24 +226,22 @@ layout: default
     <!-- /container -->
 </section>
 <!-- /Heading Dark Background -->
+
 <section id="portfolio" style="padding-bottom: 30px; padding-top: 30px;">
-    <div class="container">
-        
-        <!-- <p class="sub-heading">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>-->
+        <div class="container">
 
-        <!--<div class="portfolio-filter-group text-center folio-fillter-2 mrg-top-50 mrg-btm-30">
-            <a href="#" data-filter="*" class="iso-active iso-button ">All</a>
-            <a href="#" data-filter=".graphic" class="iso-button">Corporate</a>
-            <a href="#" data-filter=".web" class="iso-button">Web Platforms</a>
-            <a href="#" data-filter=".branding" class="iso-button">E-Commerce</a>
-            <a href="#" data-filter=".video" class="iso-button">Design</a>
-        </div>-->
-        <!-- portfolio-filter -->
+            <div class="portfolio-filter-group text-center folio-fillter-2 mrg-top-50 mrg-btm-30">
+                <a href="#" data-filter="*" class="iso-active iso-button ">Tous</a>
+                <a href="#" data-filter=".appweb" class="iso-button">Applications Web</a>
+                <a href="#" data-filter=".vitrine" class="iso-button">Sites Web</a>
+                <a href="#" data-filter=".e-commerce" class="iso-button">Sites E-commerce</a>
+                <a href="#" data-filter=".appmobile" class="iso-button">Applications Mobile</a>
+            </div>
+            <!-- portfolio-filter -->
 
-        <div class="portfolio portfolio-isotope masonry col-3 gutter ">
-            
+            <div class="portfolio portfolio-isotope masonry col-3 gutter mrg-top-50">
             {% for realisation in site.realisations %}
-                <div class="folio-item video web branding">
+                <div class="folio-item {{ realisation.filtre }}">
                     <div class="folio-style-1">
                         <div class="folio-image">
                             <img class="img-responsive" src="{{ realisation.image }}" alt="{{ realisation.title }}" style="width: 360px; height: 170px;">
@@ -274,14 +269,19 @@ layout: default
                     <!-- /folio-style -->
                 </div>
                 <!-- /folio-item -->
+                <!-- /folio-item -->
             {% endfor %}
-
+            </div>
+            <!-- /portfolio -->
         </div>
-        <!-- /portfolio -->
-    </div>
-    <!-- /container -->
-</section>
-<!-- /#Portfolio -->
+        <!-- /container -->
+    </section>
+    <!-- /#Portfolio -->
+    <!-- Portfolio -->
+    <!-- Heading Dark Background -->
+    
+
+
 
 
 <!-- Testimonial - ->
