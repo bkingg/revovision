@@ -1,21 +1,4 @@
 ---
-pages:
-- _realisations/senseries-com.md
-- _realisations/lave-auto-sunshine.md
-- _realisations/independance-immobiliere.markdown
-- _realisations/app-senseries.md
-- _realisations/education-model.md
-- _realisations/clinic-model.md
-- _realisations/senevision-com.md
-- _realisations/koon-groupe.md
-- _realisations/les-clefs-pour-reussir.md
-- _realisations/topmenu.markdown
-- _realisations/chez-khady.markdown
-- _realisations/elbo-suites.markdown
-- _realisations/smbs.markdown
-- _realisations/club-electronic.markdown
-- _realisations/snzik.markdown
-- _realisations/iaer-solutions.markdown
 hide_body: false
 is_partial: false
 fields:
@@ -61,3 +44,20 @@ fields:
     - Sites E-commerce
     - Sites Web
   label: type
+pages:
+- _realisations/senseries-com.md
+- _realisations/lave-auto-sunshine.md
+- _realisations/independance-immobiliere.markdown
+- _realisations/app-senseries.md
+- _realisations/education-model.md
+- _realisations/clinic-model.md
+- _realisations/senevision-com.md
+- _realisations/koon-groupe.md
+- _realisations/les-clefs-pour-reussir.md
+- _realisations/topmenu.markdown
+- _realisations/chez-khady.markdown
+- _realisations/elbo-suites.markdown
+- _realisations/smbs.markdown
+- _realisations/club-electronic.markdown
+- _realisations/snzik.markdown
+- _realisations/iaer-solutions.markdown
