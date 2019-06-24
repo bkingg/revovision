@@ -45,6 +45,7 @@ fields:
     - Sites Web
   label: type
 pages:
+- _realisations/independance-immobiliere.markdown
 - _realisations/sarraounia-prize.md
 - _realisations/lti-delafosse.md
 - _realisations/cabinet-kap-expertise.md
@@ -56,7 +57,6 @@ pages:
 - _realisations/snzik.markdown
 - _realisations/topmenu.markdown
 - _realisations/club-electronic.markdown
-- _realisations/independance-immobiliere.markdown
 - _realisations/elbo-suites.markdown
 - _realisations/lave-auto-sunshine.md
 - _realisations/senseries-com.md
