@@ -45,6 +45,7 @@ fields:
     - Sites Web
   label: type
 pages:
+- _realisations/smbs.markdown
 - _realisations/app-senseries.md
 - _realisations/koon-groupe.md
 - _realisations/les-clefs-pour-reussir.md
@@ -52,7 +53,6 @@ pages:
 - _realisations/topmenu.markdown
 - _realisations/club-electronic.markdown
 - _realisations/independance-immobiliere.markdown
-- _realisations/smbs.markdown
 - _realisations/elbo-suites.markdown
 - _realisations/lave-auto-sunshine.md
 - _realisations/senseries-com.md
