@@ -45,6 +45,7 @@ fields:
     - Sites Web
   label: type
 pages:
+- _realisations/cnqp.md
 - _realisations/smbs.markdown
 - _realisations/app-senseries.md
 - _realisations/koon-groupe.md
