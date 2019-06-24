@@ -45,6 +45,7 @@ fields:
     - Sites Web
   label: type
 pages:
+- _realisations/sarraounia-prize.md
 - _realisations/lti-delafosse.md
 - _realisations/cabinet-kap-expertise.md
 - _realisations/cnqp.md
