@@ -4,14 +4,6 @@ auto_deploy: true
 admin_path: 
 webhook_url: 
 sections:
-- type: jekyll-pages
-  label: Pages
-  create: all
-- type: directory
-  path: _uploads
-  label: Uploads
-  create: all
-  match: "**/*"
 - type: directory
   path: _services
   label: Services
