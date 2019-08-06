@@ -45,21 +45,20 @@ fields:
     - Sites Web
   label: type
 pages:
-- _realisations/sarraounia-prize-1.md
-- _realisations/independance-immobiliere.markdown
-- _realisations/lti-delafosse.md
 - _realisations/cabinet-kap-expertise.md
+- _realisations/koon-groupe.md
+- _realisations/senseries-com.md
+- _realisations/independance-immobiliere.markdown
+- _realisations/sarraounia-prize-1.md
+- _realisations/lti-delafosse.md
 - _realisations/cnqp.md
 - _realisations/smbs.markdown
 - _realisations/app-senseries.md
-- _realisations/koon-groupe.md
 - _realisations/les-clefs-pour-reussir.md
 - _realisations/snzik.markdown
-- _realisations/topmenu.markdown
 - _realisations/club-electronic.markdown
 - _realisations/elbo-suites.markdown
 - _realisations/lave-auto-sunshine.md
-- _realisations/senseries-com.md
 - _realisations/clinic-model.md
 - _realisations/education-model.md
 - _realisations/iaer-solutions.markdown
